@@ -1,0 +1,21 @@
+.contact-with-area{
+    padding-top: 150px;
+    padding-bottom: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media #{$sm}{
+        padding-top: 70px;
+        padding-bottom: 180px;
+    }
+    @media #{$xs}{
+        padding-top: 70px;
+        padding-bottom: 180px;
+    }
+    .contact-us-caption{
+        p{
+            color: #fff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}

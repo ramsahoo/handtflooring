@@ -1,0 +1,76 @@
+// CountDown 
+.count-area{
+         margin-top: -134px;
+        .col-lg-4:nth-child(1) .count-clients .single-counter,
+        .col-lg-4:nth-child(2) .count-clients .single-counter
+         {
+        @media #{$md}{
+            padding-bottom: 0px;
+            text-align: center;
+        }
+        @media #{$sm}{
+            padding-bottom: 0px;
+            text-align: center;
+        }
+        @media #{$xs}{
+            padding-bottom: 0px;
+            text-align: center;
+        }
+}
+
+.count-clients{
+    display: flex;
+    justify-content: center;
+
+    .single-counter{
+            padding: 60px 0;
+            display: flex;
+            
+        &:last-child {
+            margin-right: 0px;
+        }
+        .count-number{
+            span {
+                color: #fff;
+                font-size: 55px;
+                font-weight: 700;
+                margin-bottom: 0;
+                display: block;
+                
+            }
+        }
+        
+        p {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+        }
+        .count-text {
+            padding-left: 20px;
+                p {
+                    color: #fff;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                    display: block;
+                } 
+                 h5 {
+                    color: #fff;
+                    font-size: 36px;
+                    text-transform: capitalize;
+                    margin-bottom: 0px;
+                    display: block;
+                }
+        }
+    }
+
+}
+
+}
+
+.count-bg{
+    background-size: cover;
+    background-repeat:no-repeat ;
+}

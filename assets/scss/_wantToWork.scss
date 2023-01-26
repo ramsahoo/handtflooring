@@ -1,0 +1,61 @@
+.wantToWork-area {
+  position: relative;
+  z-index: 0;
+  background: $theme_color;
+  overflow: hidden;
+  .wantToWork-caption {
+    h2 {
+      color: #fff;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 1.5;
+      margin: 0;
+      @media #{$md} {
+        font-size: 32px;
+      }
+      @media #{$xs} {
+        font-size: 27px;
+      }
+    }
+  }
+  .wantToWork-btn {
+    padding-right: 50px;
+    position: relative;
+    bottom: 21px;
+    @media #{$md} {
+      float: left;
+      margin-top: 59px;
+    }
+    @media #{$xs} {
+      float: left;
+      margin-top: 59px;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/icon/footer_arrow.png);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: slide1 1s ease-in-out infinite;
+    margin-left: 0px;
+    @keyframes slide1 {
+      0%,
+      100% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(5px, 0);
+        -webkit-transform: translate(5px, 0);
+        -moz-transform: translate(5px, 0);
+        -ms-transform: translate(5px, 0);
+        -o-transform: translate(5px, 0);
+      }
+    }
+  }
+}
