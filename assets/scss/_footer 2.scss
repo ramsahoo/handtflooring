@@ -1,0 +1,178 @@
+.footer-area {
+  background: #070b11;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/gallery/arrow_testimonial.png);
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    // Animated
+    animation: slide1 1s ease-in-out infinite;
+    @keyframes slide1 {
+      0%,
+      100% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(5px, 0);
+        -webkit-transform: translate(5px, 0);
+        -moz-transform: translate(5px, 0);
+        -ms-transform: translate(5px, 0);
+        -o-transform: translate(5px, 0);
+      }
+    }
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+  .footer-pera {
+    .info1 {
+      margin-bottom: 10px;
+      line-height: 1.8;
+      padding-right: 40px;
+      @media #{$laptop} {
+        padding-right: 0px;
+      }
+      @media #{$lg} {
+        padding-right: 0px;
+      }
+      @media #{$md} {
+        padding-right: 0px;
+      }
+      @media #{$sm} {
+        padding-right: 0px;
+      }
+      @media #{$xs} {
+        padding-right: 0px;
+      }
+    }
+    .info2 {
+      margin-bottom: 50px;
+      line-height: 1.8;
+    }
+    &.footer-pera2 p {
+      padding: 0;
+    }
+  }
+  .footer-tittle {
+    & h4 {
+      color: #fff;
+      font-size: 35px;
+      margin-bottom: 29px;
+      font-weight: 500;
+      font-family: $font_3;
+    }
+    & ul {
+      & li {
+        color: #9fa6bd;
+        margin-bottom: 15px;
+        & a {
+          color: #868c98;
+          font-weight: 300;
+          &:hover {
+            color: $theme-color;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+    p {
+      color: #9fa6bd;
+    }
+  }
+
+  .footer-form {
+    margin-bottom: 30px;
+    & form {
+      position: relative;
+      & input {
+        width: 100%;
+        height: 43px;
+        padding: 10px 20px;
+        border: 0;
+        background: #1e293a;
+        color: #fff;
+        &::placeholder {
+          color: #9fa6bd;
+        }
+      }
+      & .form-icon {
+        & button {
+          position: absolute;
+          top: 0px;
+          right: 0;
+          background: none;
+          border: 0;
+          cursor: pointer;
+          padding: 14px 22px;
+          background: #0a0f17;
+          line-height: 1;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .info.error {
+    color: $theme-color;
+  }
+  .footer-social {
+    & a {
+      width: 40px;
+      height: 40px;
+      font-size: 14px;
+      border: 1px solid#fafafa;
+      background: #fafafa;
+      display: inline-block;
+      line-height: 40px;
+      text-align: center;
+      color: #949eb2;
+      margin-right: 5px;
+      @include transition(0.4s);
+    }
+  }
+  // Copy Right
+  .footer-copy-right {
+    padding-top: 20px;
+    @media #{$xs} {
+      padding-top: 0px;
+    }
+    & p {
+      color: #9fa6bd;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 2;
+      margin-bottom: 12px;
+      & i {
+        color: $theme-color;
+      }
+      & a {
+        color: $theme-color;
+        &:hover {
+          color: $theme-color;
+        }
+      }
+    }
+  }
+}
+.footer-social {
+  a:hover {
+    background: $theme-color;
+    i {
+      color: #fff;
+      @include transition(0.4s);
+    }
+  }
+}
+
+.map-footer {
+  img {
+    width: 100%;
+  }
+}

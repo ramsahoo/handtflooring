@@ -1,0 +1,78 @@
+.services-area1 {
+  .single-service-cap {
+    overflow: hidden;
+    .service-img {
+      overflow: hidden;
+      & img {
+        width: 100%;
+        transform: scale(1);
+        @include transition(0.5s);
+      }
+    }
+    .service-cap {
+      padding: 20px 30px 20px 30px;
+      background: #fcfdff;
+      & h4 {
+        margin-bottom: 35px;
+
+        & a {
+          color: $heading-color;
+          font-size: 24px;
+          font-weight: 700;
+          @media #{$xs} {
+            font-size: 18px;
+          }
+          &:hover {
+            color: $theme_color;
+          }
+        }
+      }
+    }
+    // icon
+    .service-icon {
+      // animation: slide1 1.5s ease-in-out infinite;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.single-service-cap:hover {
+  .service-img img {
+    transform: scale(1.1);
+  }
+  .more-btn {
+    i {
+      color: #fff;
+      background: #ff5f13;
+    }
+  }
+}
+
+.more-btn {
+  color: #161e46;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
+  i {
+    color: #161e46;
+    background: transparent;
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    line-height: 38px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 10px;
+    @include transition(0.4s);
+  }
+  &:hover {
+    color: #161e46;
+    i {
+      color: #fff;
+      background: #ffde15;
+    }
+  }
+}

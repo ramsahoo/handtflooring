@@ -1,0 +1,132 @@
+.latest-news-area{
+    .single-news{
+        background: #00235b;
+        .news-img{
+            position: relative;
+            overflow: hidden;
+            & img{
+                width: 100%;
+                @include transform(scale (1));
+                transition: all 0.5s ease-out 0s;
+                @include transition(.7s);
+                }
+                // Date
+                .news-date{
+                    background:#ffde15;
+                    padding:15px 34px;
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                    @media #{$md}{
+                        padding: 8px 20px;
+                    }
+                    @media #{$sm}{
+                        padding: 8px 20px;
+                    }
+                    @media #{$xs}{
+                        padding: 8px 20px;
+                    }
+                    span{
+                        color: #fff;
+                        font-size: 25px;
+                        font-weight: 600;
+                        line-height: 1;
+                        margin: 0;
+                        @media #{$md}{
+                            font-size: 22px;
+                        }
+                        @media #{$sm}{
+                            font-size: 22px;
+                        }
+                        @media #{$xs}{
+                            font-size: 22px;
+                        }
+                    }
+                    p{
+                        color: #fff;
+                        margin: 0;
+                    }
+                }
+        }
+        .news-caption{
+            padding: 40px 57px 40px 60px;
+            @media #{$md}{
+                padding: 10px 10px 10px 10px;
+            }
+            @media #{$sm}{
+                padding: 10px 10px 10px 10px;
+            }
+            @media #{$xs}{
+                padding: 10px 10px 10px 10px;
+            }
+            .david-info{
+                & li{
+                    display: inline-block;
+                    margin-right: 14px;
+                    padding-right: 14px;
+                    line-height: 1;
+                    margin-bottom: 16px;
+                    color: #a4acc3;
+                    @media #{$xs}{
+                        margin-right: 1px;
+                        padding-right: 5px;
+                        padding-right: 12px;
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                        padding-right: 0px;
+                        border-right: 0;
+                    }
+                }
+            }
+            & h2{
+                & a{
+                    color:#fff;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 1.5;
+                    padding-right: 56px;
+                    margin-bottom:17px;
+                    text-decoration: none;
+                    display: block;
+                    @media #{$md}{
+                        padding-right: 6px;
+                    }
+                    @media #{$xs}{
+                        padding-right: 0px;
+                    }
+                }
+            }
+            & a{
+                color: $theme_color;
+                font-size: 16px;
+               
+                &:hover{
+                    color: $theme_color;
+                }
+                &.d-btn{
+                    position: relative;
+                    text-transform: uppercase;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        background:#282828;
+                        width: 100%;
+                        height: 1px;
+                        bottom: -1px;
+                        @include transition(.3s)
+                    }
+                }
+            }
+        }
+    }
+}
+
+.latest-news-area .single-news .news-caption a:hover::before{
+    background:$theme_color;
+}
+
+.news-img:hover .news-img img{
+	transform:scale(1.1);
+}
