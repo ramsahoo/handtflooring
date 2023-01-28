@@ -6,7 +6,7 @@ $(document).ready(function(){
     
     jQuery.validator.addMethod('answercheck', function (value, element) {
         return this.optional(element) || /^\bcat\b$/.test(value)
-    }, "type the correct answer -_-");
+    }, "Correct answer is required.");
 
     // validate contactForm form
     $(function() {
@@ -35,23 +35,23 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
-                    minlength: "your name must consist of at least 2 characters"
+                    required: "Name is required.",
+                    minlength: "Your name must consist of at least 2 characters."
                 },
                 subject: {
-                    required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
+                    required: "Subject is required.",
+                    minlength: "Your subject must consist of at least 4 characters."
                 },
                 number: {
-                    required: "come on, you have a number, don't you?",
-                    minlength: "your Number must consist of at least 5 characters"
+                    required: "Number is required",
+                    minlength: "your Number must consist of at least 5 characters."
                 },
                 email: {
-                    required: "no email, no message"
+                    required: "Email address is required."
                 },
                 message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    required: "Message cannot be blank.",
+                    minlength: "More content is required."
                 }
             },
             submitHandler: function(form) {

@@ -34,14 +34,14 @@
 }
 .boxed-btn {
   background: #fff;
-  color: #ffde15 !important;
+  color: black !important;
   display: inline-block;
   padding: 18px 44px;
   font-family: "Barlow", sans-serif;
   font-size: 14px;
   font-weight: 400;
   border: 0;
-  border: 1px solid #ffde15;
+  border: 1px solid black;
   letter-spacing: 3px;
   text-align: center;
   color: #ffde15;
@@ -50,8 +50,8 @@
 }
 .boxed-btn:hover {
   background: #ffde15;
-  color: #fff !important;
-  border: 1px solid #ffde15;
+  color: black !important;
+  border: 1px solid black;
 }
 .boxed-btn:focus {
   outline: none;
@@ -1653,13 +1653,13 @@ hr {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .section-padding30 {
-    padding-top: 183px;
+    padding-top: 60px;
     padding-bottom: 170px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .section-padding30 {
-    padding-top: 150px;
+    padding-top: 60px;
     padding-bottom: 120px;
   }
 }
@@ -2615,7 +2615,7 @@ hr {
 }
 .services-area1 .single-service-cap .service-cap h4 a {
   color: #0e132a;
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 700;
 }
 @media (max-width: 575px) {
@@ -2633,7 +2633,7 @@ hr {
   transform: scale(1.1);
 }
 .single-service-cap:hover .more-btn i {
-  color: #fff;
+  color: black;
   background: #ffde15;
 }
 .more-btn {
@@ -2660,10 +2660,10 @@ hr {
   transition: all 0.4s ease-out 0s;
 }
 .more-btn:hover {
-  color: #161e46;
+  color: black;
 }
 .more-btn:hover i {
-  color: #fff;
+  color: black!important;
   background: #ffde15;
 }
 .support-company-area .support-wrapper {
@@ -3158,7 +3158,7 @@ hr {
 .project-area .project-caption .single-project .project-cap h4 a,
 .about-area .project-caption .single-project .project-cap h4 a,
 .contact-section .project-caption .single-project .project-cap h4 a {
-  color: #0e132a;
+  color: black;
 }
 .project-area .project-caption .single-project .project-cap h4 a:hover,
 .about-area .project-caption .single-project .project-cap h4 a:hover,
@@ -3183,7 +3183,7 @@ hr {
 .project-area .project-caption .single-project .plus-btn i,
 .about-area .project-caption .single-project .plus-btn i,
 .contact-section .project-caption .single-project .plus-btn i {
-  color: #161e46;
+  color: black;
   background: transparent;
   width: 38px;
   height: 38px;
@@ -3201,7 +3201,7 @@ hr {
 .project-area .project-caption .single-project:hover .project-cap,
 .about-area .project-caption .single-project:hover .project-cap,
 .contact-section .project-caption .single-project:hover .project-cap {
-  background: #00235b;
+  background: black;
 }
 .project-area .project-caption .single-project:hover .project-cap h4 a,
 .about-area .project-caption .single-project:hover .project-cap h4 a,
@@ -3288,7 +3288,7 @@ hr {
 .contact-section .nav-tabs .nav-item.show .nav-link,
 .contact-section .nav-tabs .nav-link.active {
   color: #ffde15;
-  background: none;
+  background: black;
 }
 .project-area .nav-tabs .nav-item,
 .about-area .nav-tabs .nav-item,
