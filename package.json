@@ -2,8 +2,24 @@
   "dependencies": {
     "firebase": "^9.16.0",
     "tools": "^0.0.0",
-    "public": "dist/constructioncompany-master"
-  }
+    "public": "github:dist/constructioncompany-master"
+  },
+  "name": "constructioncompany-master",
+  "description": "Flooring company website. HTML, CSS and JavaScript.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramsahoo/handtflooring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramsahoo/handtflooring/issues"
+  },
+  "homepage": "https://github.com/ramsahoo/handtflooring#readme"
 }
-
-
