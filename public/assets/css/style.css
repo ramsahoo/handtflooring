@@ -1547,14 +1547,14 @@ hr {
   border-radius: 50%;
   -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
   box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-  -webkit-animation: zoom 2000ms infinite ease;
+  -webkit-animation: zoom 1000ms infinite ease;
   animation: zoom 1000ms infinite ease;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
 }
 .preloader .preloader-circle2 {
-  border-top-color: #0078ff;
+  border-top-color: black;
 }
 .preloader .preloader-img {
   position: absolute;
@@ -1578,7 +1578,7 @@ hr {
 }
 .preloader .pere-text strong {
   font-weight: 800;
-  color: #dca73a;
+  color: #ffde15;
   text-transform: uppercase;
 }
 @-webkit-keyframes zoom {
