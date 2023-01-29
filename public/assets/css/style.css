@@ -1745,7 +1745,7 @@ hr {
 }
 @media (max-width: 575px) {
   .footer-padding {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 0px;
   }
 }
