@@ -1519,7 +1519,7 @@ hr {
   }
 }
 .preloader {
-  background-color: #f7f7f7;
+  background-color: black;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -1548,7 +1548,7 @@ hr {
   -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
   box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
   -webkit-animation: zoom 2000ms infinite ease;
-  animation: zoom 2000ms infinite ease;
+  animation: zoom 1000ms infinite ease;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
