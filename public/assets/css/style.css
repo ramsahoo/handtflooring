@@ -2164,6 +2164,7 @@ hr {
 }
 .main-header .logo .small-logo {
   display: none;
+  max-width: 10%;
 }
 @media (max-width: 575px) {
   .main-header .logo .small-logo {
