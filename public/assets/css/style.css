@@ -2813,12 +2813,12 @@ hr {
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .support-company-area .support-wrapper .right-content .support-img-cap {
-    padding: 27px 18px;
+    padding: 15px 18px;
   }
 }
 @media (max-width: 575px) {
   .support-company-area .support-wrapper .right-content .support-img-cap {
-    padding: 5px 8px;
+    padding: 15px 18px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -2842,7 +2842,7 @@ hr {
 @media (max-width: 575px) {
   .support-company-area .support-wrapper .right-content .support-img-cap span {
     padding: 6px 40px;
-    font-size: 20px;
+    font-size: 35px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
