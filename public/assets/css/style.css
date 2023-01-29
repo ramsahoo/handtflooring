@@ -1677,7 +1677,7 @@ hr {
 }
 @media (max-width: 575px) {
   .section-padding30 {
-    padding-top: 70px;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 }
