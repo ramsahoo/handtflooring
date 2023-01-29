@@ -10,8 +10,8 @@ $("[data-background]").each(function () {
 
 /* 1. Preloader */
     $(window).on('load', function () {
-      $('#preloader-active').delay(450).fadeOut('slow');
-      $('body').delay(450).css({
+      $('#preloader-active').delay(150).fadeOut('slow');
+      $('body').delay(150).css({
         'overflow': 'visible'
       });
     });
