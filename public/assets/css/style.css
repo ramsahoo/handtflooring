@@ -2248,9 +2248,8 @@ hr {
 .slider-height {
   min-height: 900px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left left;
   background-size: cover;
-  width: auto;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-height {
@@ -2275,7 +2274,7 @@ hr {
 .slider-height2 {
   min-height: 590px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .slider-height2 {
@@ -2304,7 +2303,7 @@ hr {
   margin-top: -1px;
 }
 .slider-area .hero__caption {
-  margin-left: 31px;
+  margin-left: 27px;
   padding-top: 150px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2319,7 +2318,7 @@ hr {
 }
 @media (max-width: 575px) {
   .slider-area .hero__caption {
-    padding-top: 130px;
+    padding-top: 70px;
   }
 }
 .slider-area .hero__caption h1 {
@@ -2350,8 +2349,7 @@ hr {
 }
 @media (max-width: 575px) {
   .slider-area .hero__caption h1 {
-    font-size: 50px;
-    margin-bottom: 220px;
+    font-size: 42px;
   }
 }
 .slider-area .hero__caption .stock-text {
@@ -2380,7 +2378,7 @@ hr {
     top: -12px;
     left: 40px;
     top: 0;
-    left: 70;
+    left: 0;
   }
 }
 .slider-area .hero__caption .stock-text h2 {
@@ -2409,9 +2407,8 @@ hr {
 }
 @media (max-width: 575px) {
   .slider-area .hero__caption .stock-text h2 {
-    font-size: 50px;
-    width: 100%;
-    margin-top: -220px;
+    font-size: 27px;
+    margin-bottom: 25px;
   }
 }
 .slider-area .hero__caption .stock-text h2:nth-child(1) {
@@ -2485,7 +2482,7 @@ hr {
   .slider-area .hero__caption .hero-text1 a,
   .slider-area .hero__caption .hero-text2 span,
   .slider-area .hero__caption .hero-text2 a {
-    display: none;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2505,7 +2502,7 @@ hr {
 }
 @media (max-width: 575px) {
   .slider-area .hero__caption .hero-text2 {
-    display: none;
+    margin-top: 50px;
   }
 }
 .hero-overly {
