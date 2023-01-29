@@ -2413,7 +2413,7 @@ hr {
 }
 .slider-area .hero__caption .stock-text h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 0.5px #fff;
   -webkit-text-fill-color: transparent;
 }
 .slider-area .hero__caption .stock-text h2:nth-child(2) {
