@@ -2351,7 +2351,7 @@ hr {
 @media (max-width: 575px) {
   .slider-area .hero__caption h1 {
     font-size: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 220px;
   }
 }
 .slider-area .hero__caption .stock-text {
@@ -2411,7 +2411,7 @@ hr {
   .slider-area .hero__caption .stock-text h2 {
     font-size: 50px;
     width: 100%;
-    margin-top: -70px;
+    margin-top: -220px;
   }
 }
 .slider-area .hero__caption .stock-text h2:nth-child(1) {
