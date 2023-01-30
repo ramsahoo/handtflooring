@@ -2672,6 +2672,7 @@ hr {
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .support-company-area .support-wrapper {
     display: block;
+    padding-left: 0px;
   }
 }
 .support-company-area .support-wrapper .left-content {
@@ -2691,14 +2692,14 @@ hr {
 }
 @media only screen and (min-width: 1441px) and (max-width: 1800px) {
   .support-company-area .support-wrapper .left-content {
-    padding-left: 200px;
+    padding-left: 180px;
     width: 49%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .support-company-area .support-wrapper .left-content {
     width: 100%;
-    padding-left: 60px;
+    padding-left: 40px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2710,7 +2711,7 @@ hr {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .support-company-area .support-wrapper .left-content {
     width: 100%;
-    padding-left: 160px;
+    padding-left: 0px;
   }
 }
 @media (max-width: 575px) {
