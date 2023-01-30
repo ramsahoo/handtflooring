@@ -2,11 +2,11 @@ $(document).ready(function(){
     
     $("#send").on('click', function(e){
         
-        $("#send").text('Please Wait..');
+        $("#send").text('Sending...');
         $("#send").attr('disabled', true);
         
         $.ajax({
-                url: "#contact_process.php",
+                url: "/Applications/XAMPP/xamppfiles/htdocs/constructioncompany-master/public/contact_process.php",
             method:"POST",
                 dataType:"JSON",
                 data:{
@@ -20,7 +20,7 @@ $(document).ready(function(){
                     $("#send").text('Send');
                     $("#send").attr('disabled', false);
                     if (res == 1){
-                        $("#status").html('Message Sent Successfully.');
+                        $("#status").html('Message Sent Successfully! Thank you for contacting us. We will get back to you as soon as possible.');
                     }else if(res == 0){
                         $("#status").html('Message Failed.');
                     }else if(res == 2){
