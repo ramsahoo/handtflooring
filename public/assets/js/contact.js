@@ -36,18 +36,18 @@ $(document).ready(function(){
             messages: {
                 name: {
                     required: "Name is required.",
-                    minlength: "Your name must consist of at least 2 characters."
+                    minlength: "Name must consist of at least 2 characters."
                 },
                 subject: {
                     required: "Subject is required.",
-                    minlength: "Your subject must consist of at least 4 characters."
+                    minlength: "Subject must consist of at least 4 characters."
                 },
                 number: {
                     required: "Number is required",
-                    minlength: "your Number must consist of at least 5 characters."
+                    minlength: "Number must consist of at least 5 characters."
                 },
                 email: {
-                    required: "Email address is required."
+                    required: "Email is required."
                 },
                 message: {
                     required: "Message cannot be blank.",

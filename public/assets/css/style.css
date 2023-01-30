@@ -2685,7 +2685,7 @@ hr {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .support-company-area .support-wrapper .left-content {
-    padding-left: 30px;
+    padding-left: 80px;
     width: 49%;
   }
 }
@@ -2698,19 +2698,19 @@ hr {
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .support-company-area .support-wrapper .left-content {
     width: 100%;
-    padding-left: 120px;
+    padding-left: 60px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .support-company-area .support-wrapper .left-content {
     width: 100%;
-    padding-left: 30px;
+    padding-left: 60px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .support-company-area .support-wrapper .left-content {
     width: 100%;
-    padding-left: 30px;
+    padding-left: 80px;
   }
 }
 @media (max-width: 575px) {

@@ -1,0 +1,115 @@
+.testimonial-area{
+    position: relative;
+    overflow: hidden;
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../img/gallery/arrow_testimonial.png);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 28px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 0px;
+        // Animated
+        animation: slide1 1s ease-in-out infinite;
+        @keyframes slide1 {
+            0%,
+            100% {
+              transform: translate(0, 0);
+            }
+            50% {
+              transform: translate(5px, 0);
+              -webkit-transform: translate(5px, 0);
+              -moz-transform: translate(5px, 0);
+              -ms-transform: translate(5px, 0);
+              -o-transform: translate(5px, 0);
+            }
+          }
+    }
+    .testimonial-caption{
+        .testimonial-top-cap{
+            & svg{
+                margin-bottom: 17px;
+            }
+            & p{
+                color: #a4acc3;
+                font-weight: 500;
+                line-height: 1.5;
+                padding: 0 3px;
+                margin-bottom: 50px;
+                font-size: 16px;
+
+                // margin
+                @media #{$md}{
+                    margin-bottom: 30px;
+                }
+                @media #{$xs}{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .testimonial-founder{
+            .founder-img{
+
+            }
+            .founder-text{
+               padding-left: 20px;
+               border-left: 2px solid #ff5f13;
+                & span{
+                    color:#fff;
+                }
+                & p{
+                    color:#677294;
+                    font-weight:500;
+                    line-height:1.5 ;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        
+    }
+
+}
+
+
+/* Homepage1 Testimonial */
+.h1-testimonial-active{
+    button.slick-arrow {
+        position: absolute;
+        right: 0;
+        border: 0;
+        padding: 0;
+        z-index: 2;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 20px;
+        @include transition(.3s);
+        color: #616373;
+        background: none;
+        margin: 0 auto;
+        bottom: 0;   
+        border: 1px solid #616373;
+    } 
+    button.slick-next {
+        right: -40px;
+        color: #fff;
+        border: 1px solid #fff;
+      
+    }
+    button i{
+        font-size: 13px;
+        position: relative;
+        top: -3px;
+    }
+}
+.t-bg{
+    background: #00235b;
+}
+.slick-initialized .slick-slide {
+    outline: 0;
+}
