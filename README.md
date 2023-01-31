@@ -1,2 +1,2 @@
 # handtflooring
-Flooring company website. HTML, CSS and JavaScript.
+Flooring company website. HTML, CSS, JavaScript and PHP.
