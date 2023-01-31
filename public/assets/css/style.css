@@ -1739,7 +1739,7 @@ hr {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .footer-padding {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 0px;
   }
 }
