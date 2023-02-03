@@ -1,42 +1,90 @@
 $(document).ready(function(){
     
-    $("#send").on('click', function(e){
-        
-        $("#send").text('Sending...');
-        $("#send").attr('disabled', true);
-        
-        $.ajax({
-                url: "contact_process.php",
-            method:"POST",
-                dataType:"JSON",
-                data:{
-                    name:$("#name").val(),
-                    email:$("#email").val(),
-                    phone:$("#phone").val(),
-                    subject:$("#subject").val(),
-                    message:$("#message").val()
+    (function($) {
+        "use strict";
+
+    
+    jQuery.validator.addMethod('answercheck', function (value, element) {
+        return this.optional(element) || /^\bcat\b$/.test(value)
+    }, "type the correct answer -_-");
+
+    // validate contactForm form
+    $(function() {
+        $('#contactForm').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2,
+                    color: red
                 },
-                success:function(res){
-                    $("#send").text('Send');
-                    $("#send").attr('disabled', false);
-                    if (res == 1){
-                        $("#status").html('Message Sent Successfully! Thank you for contacting us. We will get back to you as soon as possible.');
-                    }else if(res == 0){
-                        $("#status").html('Message Failed.');
-                    }else if(res == 2){
-                        $("#status").html('Empty Fields Detected.');
-                    }else if(res == 3){
-                        $("#status").html('Invalid Email Address.');
-                    }
-                    
+                subject: {
+                    required: true,
+                    minlength: 4,
+                    color: red
                 },
-                error: function(err){
-                    
-                    $('#status').html( "Network Connection Error.");
+                number: {
+                    required: true,
+                    minlength: 5,
+                    color: red
+                },
+                email: {
+                    required: true,
+                    email: true,
+                    color: red
+                },
+                message: {
+                    required: true,
+                    minlength: 20,
+                    color: red
                 }
-                });
-    
+            },
+            messages: {
+                name: {
+                    required: "Name field must not be blank.",
+                    minlength: "Your name must consist of at least 2 characters.",
+                },
+                subject: {
+                    required: "Subject field cannot be blank.",
+                    minlength: "Your subject must consist of at least 4 characters."
+                },
+                number: {
+                    required: "Number field must not be blank.",
+                    minlength: "Your number must consist of at least 5 characters"
+                },
+                email: {
+                    required: "Email field cannot be blank."
+                },
+                message: {
+                    required: "Message field cannot be blank.",
+                    minlength: "Please provide more message content."
+                }
+            },
+            submitHandler: function(form) {
+                $(form).ajaxSubmit({
+                    type:"POST",
+                    data: $(form).serialize(),
+                    url:"contact_process.php",
+                    success: function() {
+                        $('#contactForm :input').attr('disabled', 'disabled');
+                        $('#contactForm').fadeTo( "slow", 1, function() {
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor','default');
+                            $('#success').fadeIn()
+                            $('.modal').modal('hide');
+		                	$('#success').modal('show');
+                        })
+                    },
+                    error: function() {
+                        $('#contactForm').fadeTo( "slow", 1, function() {
+                            $('#error').fadeIn()
+                            $('.modal').modal('hide');
+		                	$('#error').modal('show');
+                        })
+                    }
+                })
+            }
+        })
+    })
         
-    });
-    
-    });
+ })(jQuery)
+})

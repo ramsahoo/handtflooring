@@ -215,14 +215,6 @@ $("[data-background]").each(function () {
     new WOW().init();
 
 
-
-/* 13. counterUp*/
-  $('.counter').counterUp({
-    delay: 10,
-    time: 3000
-  });
-
-
     
 // 11. ---- Mailchimp js --------//  
     function mailChimp() {

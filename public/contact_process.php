@@ -1,55 +1,39 @@
 <?php
-    
 
-	class Sendmail{
-		
-	function getMailStatus(){
-		//Check For Submit
-			$status = '';
-			//Get Form Data
-			$name = htmlspecialchars($_POST['Name']);
-			$email = htmlspecialchars($_POST['Email']);
-			$phone = htmlspecialchars($_POST['Phone']);
-			$subject = htmlspecialchars($_POST['Subject']);
-			$message = htmlspecialchars($_POST['Message']);
-	
-			if(filter_var($email, FILTER_VALIDATE_EMAIL) === false){
-					$status = '3';
-				} else {
-					// Passed
-					// Recipient Email
-					$toEmail = 'rameensahoo@gmail.com';
-					$from_name = 'H & T Flooring';
-					$from_email = 'rameensahoo@gmail.com';
-					$subject = ''.$title;
-					$body = '<h2>H & T Flooring Contact Request</h2>
-						<h4>Name</h4><p>'.$name.'</p>
-						<h4>Email</h4><p>'.$email.'</p>
-						<h4>Phone Number</h4><p>'.$phone.'</p>
-						<h4>Message</h4><p>'.$message.'</p>
-						';
-	
-					//Email Headers
-					$headers ="MIME-Version: 1.0" ."\r\n";
-					$headers .="Content-Type:text/html;charset=UTF-8" . "\r\n";
-	
-					// Additional Headers
-					$headers .= "From: " .$from_name. "<".$from_email.">". "\r\n";
-	
-					if(mail($toEmail, $subject, $body, $headers)){
-						// Email Sent
-						$status = '1';
-					} else {
-						//Failed
-						$status = '2';
-					}
-				}
-			
-		return $status;
-	}
-		
-	}
-			
-	$test = new Sendmail();
-		echo $test->getMailStatus();
-	?>
+if (isset($_POST['Register'])) {
+
+    $to = "rameensahoo@gmail.com";
+    $from = $_REQUEST['email'];
+    $name = $_REQUEST['name'];
+    $subject = $_REQUEST['subject'];
+    $number = $_REQUEST['number'];
+    $message = $_REQUEST['message'];
+
+    $headers = "From: $from";
+	$headers = "From: " . $from . "\r\n";
+	$headers .= "Reply-To: ". $from . "\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+    $subject = "You have a message from H & T Flooring.";
+
+    $logo = 'img/logo.png';
+    $link = 'handtfloors.com';
+
+	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
+	$body .= "<table style='width: 100%;'>";
+	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
+	$body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
+	$body .= "</td></tr></thead><tbody><tr>";
+	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
+	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
+	$body .= "</tr>";
+	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$subject}</td></tr>";
+	$body .= "<tr><td></td></tr>";
+	$body .= "<tr><td colspan='2' style='border:none;'>{$message}</td></tr>";
+	$body .= "</tbody></table>";
+	$body .= "</body></html>";
+
+    $send = mail($to, $subject, $body, $headers);
+}
+?>
