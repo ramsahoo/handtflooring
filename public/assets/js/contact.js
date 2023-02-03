@@ -6,7 +6,7 @@ $(document).ready(function(){
         $("#send").attr('disabled', true);
         
         $.ajax({
-                url: "/Applications/XAMPP/xamppfiles/htdocs/constructioncompany-master/public/contact_process.php",
+                url: "contact_process.php",
             method:"POST",
                 dataType:"JSON",
                 data:{

@@ -2758,6 +2758,8 @@ hr {
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .support-company-area .support-wrapper .right-content {
     width: 49%;
+    position: relative;
+    padding-bottom: 70px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
