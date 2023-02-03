@@ -2759,7 +2759,7 @@ hr {
   .support-company-area .support-wrapper .right-content {
     width: 49%;
     position: relative;
-    padding-bottom: 110px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -2767,21 +2767,21 @@ hr {
     width: 80%;
     margin-left: 119px;
     position: relative;
-    padding-top: 1100px;
+    padding-top: 50px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .support-company-area .support-wrapper .right-content {
     width: 80%;
     position: relative;
-    padding-top: 1100px;
+    padding-top: 50px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .support-company-area .support-wrapper .right-content {
     width: 100%;
     position: relative;
-    padding-top: 110px;
+    padding-top: 50px;
     padding-right: 240px;
   }
 }
@@ -2789,7 +2789,7 @@ hr {
   .support-company-area .support-wrapper .right-content {
     width: 100%;
     position: relative;
-    padding-top: 110px;
+    padding-top: 50px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
