@@ -127,13 +127,13 @@ p {
   font-weight: normal;
 }
 .bg-img-1 {
-  background-image: url(../img/hero/h1_hero.jpeg);
+  background-image: url(../img/hero/h1_hero.jpg);
 }
 .bg-img-2 {
-  background-image: url(../img/hero/h1_hero.jpeg);
+  background-image: url(../img/hero/h1_hero.jpg);
 }
 .cta-bg-1 {
-  background-image: url(../img/hero/h1_hero.jpeg);
+  background-image: url(../img/hero/h1_hero.jpg);
 }
 .img {
   max-width: 100%;
@@ -2759,45 +2759,49 @@ hr {
   .support-company-area .support-wrapper .right-content {
     width: 49%;
     position: relative;
-    padding-bottom: 70px;
+    padding-bottom: 110px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .support-company-area .support-wrapper .right-content {
     width: 80%;
     margin-left: 119px;
-    padding-top: 50px;
+    position: relative;
+    padding-top: 1100px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .support-company-area .support-wrapper .right-content {
     width: 80%;
-    padding-top: 50px;
+    position: relative;
+    padding-top: 1100px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .support-company-area .support-wrapper .right-content {
     width: 100%;
-    padding-top: 50px;
+    position: relative;
+    padding-top: 110px;
     padding-right: 240px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .support-company-area .support-wrapper .right-content {
     width: 100%;
-    padding-top: 50px;
+    position: relative;
+    padding-top: 110px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .support-company-area .support-wrapper .right-content {
     width: 100%;
-    padding-top: 50px;
+    position: relative;
   }
 }
 @media (max-width: 575px) {
   .support-company-area .support-wrapper .right-content {
     width: 100%;
-    padding-top: 50px;
+    position: relative;
   }
 }
 .support-company-area .support-wrapper .right-content .right-img img {
