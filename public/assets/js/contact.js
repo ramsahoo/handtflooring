@@ -6,7 +6,7 @@ $(document).ready(function(){
     
     jQuery.validator.addMethod('answercheck', function (value, element) {
         return this.optional(element) || /^\bcat\b$/.test(value)
-    }, "type the correct answer -_-");
+    }, "Type the correct answer.");
 
     // validate contactForm form
     $(function() {
@@ -14,28 +14,23 @@ $(document).ready(function(){
             rules: {
                 name: {
                     required: true,
-                    minlength: 2,
-                    color: red
+                    minlength: 2
                 },
                 subject: {
                     required: true,
-                    minlength: 4,
-                    color: red
+                    minlength: 4
                 },
                 number: {
                     required: true,
-                    minlength: 5,
-                    color: red
+                    minlength: 5
                 },
                 email: {
                     required: true,
-                    email: true,
-                    color: red
+                    email: true
                 },
                 message: {
                     required: true,
-                    minlength: 20,
-                    color: red
+                    minlength: 20
                 }
             },
             messages: {

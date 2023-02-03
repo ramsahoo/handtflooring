@@ -1,7 +1,5 @@
 <?php
 
-if (isset($_POST['Register'])) {
-
     $to = "rameensahoo@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
@@ -18,7 +16,7 @@ if (isset($_POST['Register'])) {
     $subject = "You have a message from H & T Flooring.";
 
     $logo = 'img/logo.png';
-    $link = 'handtfloors.com';
+    $link = 'https://handtfloors.com';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
@@ -35,5 +33,5 @@ if (isset($_POST['Register'])) {
 	$body .= "</body></html>";
 
     $send = mail($to, $subject, $body, $headers);
-}
+
 ?>
