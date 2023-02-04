@@ -1,19 +1,29 @@
 <?php
+require_once('SMTP.php');
+require_once('PHPMailer.php');
+require_once('Exception.php');
 
-    $to = "rameensahoo@gmail.com";
-    $from = $_REQUEST['email'];
-    $name = $_REQUEST['name'];
+use \PHPMailer\PHPMailer\PHPMailer;
+use \PHPMailer\PHPMailer\Exception;
+
+$mail=new PHPMailer(true); // Passing `true` enables exceptions
+
+try {
+    $from = "";
+	$to = "rameensahoo@gmail.com";
+	$name = $_REQUEST['name'];
+    $email = $_REQUEST['email'];
+	$number = $_REQUEST['number'];
     $subject = $_REQUEST['subject'];
-    $number = $_REQUEST['number'];
     $message = $_REQUEST['message'];
 
-    $headers = "From: $from";
-	$headers = "From: " . $from . "\r\n";
-	$headers .= "Reply-To: ". $from . "\r\n";
+    $headers = "From: $name";
+	$headers = "From: " . $email . "\r\n";
+	$headers .= "Reply-To: ". $email . "\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $subject = "You have a message from H & T Flooring.";
+    $subject = "You have a message for H & T Flooring.";
 
     $logo = 'img/logo.png';
     $link = 'https://handtfloors.com';
@@ -24,7 +34,8 @@
 	$body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
 	$body .= "</td></tr></thead><tbody><tr>";
 	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
-	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
+	$body .= "<td style='border:none;'><strong>Email:</strong> {$email}</td>";
+	$body .= "<td style='border:none;'><strong>Phone Number:</strong> {$number}</td>";
 	$body .= "</tr>";
 	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$subject}</td></tr>";
 	$body .= "<tr><td></td></tr>";
@@ -32,6 +43,13 @@
 	$body .= "</tbody></table>";
 	$body .= "</body></html>";
 
-    $send = mail($to, $subject, $body, $headers);
+    $send = mail($from, $to, $headers, $subject, $body);
+
+	echo 'Message has been sent. Thank you!';
+}
+	catch(Exception $e) {
+		echo 'Message could not be sent.';
+		echo 'Mailer Error: '.$mail->ErrorInfo;
+	}
 
 ?>

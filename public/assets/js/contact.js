@@ -6,11 +6,11 @@ $(document).ready(function(){
     
     jQuery.validator.addMethod('answercheck', function (value, element) {
         return this.optional(element) || /^\bcat\b$/.test(value)
-    }, "Type the correct answer.");
+    }, "Please type the correct answer.");
 
-    // validate contactForm form
+    // validate contact form
     $(function() {
-        $('#contactForm').validate({
+        $('#contact').validate({
             rules: {
                 name: {
                     required: true,
@@ -35,16 +35,16 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "Name field must not be blank.",
-                    minlength: "Your name must consist of at least 2 characters.",
+                    required: "Name field cannot be blank.",
+                    minlength: "Your name must consist of at least 2 characters."
                 },
                 subject: {
                     required: "Subject field cannot be blank.",
                     minlength: "Your subject must consist of at least 4 characters."
                 },
                 number: {
-                    required: "Number field must not be blank.",
-                    minlength: "Your number must consist of at least 10 characters"
+                    required: "Number field cannot be blank.",
+                    minlength: "Your number must consist of at least 10 characters."
                 },
                 email: {
                     required: "Email field cannot be blank."
@@ -60,8 +60,8 @@ $(document).ready(function(){
                     data: $(form).serialize(),
                     url:"server.php",
                     success: function() {
-                        $('#contactForm :input').attr('disabled', 'disabled');
-                        $('#contactForm').fadeTo( "slow", 1, function() {
+                        $('#contact :input').attr('disabled', 'disabled');
+                        $('#contact').fadeTo( "slow", 1, function() {
                             $(this).find(':input').attr('disabled', 'disabled');
                             $(this).find('label').css('cursor','default');
                             $('#success').fadeIn()
@@ -70,7 +70,7 @@ $(document).ready(function(){
                         })
                     },
                     error: function() {
-                        $('#contactForm').fadeTo( "slow", 1, function() {
+                        $('#contact').fadeTo( "slow", 1, function() {
                             $('#error').fadeIn()
                             $('.modal').modal('hide');
 		                	$('#error').modal('show');

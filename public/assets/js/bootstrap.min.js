@@ -2610,4 +2610,3 @@
     (t.Tooltip = U),
     Object.defineProperty(t, "__esModule", { value: !0 });
 });
-//# sourceMappingURL=bootstrap.min.js.map
